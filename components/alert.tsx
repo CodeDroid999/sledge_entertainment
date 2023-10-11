@@ -8,40 +8,28 @@ type Props = {
 
 const Alert = ({ preview }: Props) => {
   return (
-    <div
-      className={cn('border-b', {
-        'bg-neutral-800 border-neutral-800 text-white': preview,
-        'bg-neutral-50 border-neutral-200': !preview,
-      })}
-    >
-      <Container>
-        <div className="py-2 text-center text-sm">
-          {preview ? (
-            <>
-              This page is a preview.{' '}
-              <a
-                href="/api/exit-preview"
-                className="underline hover:text-teal-300 duration-200 transition-colors"
-              >
-                Click here
-              </a>{' '}
-              to exit preview mode.
-            </>
-          ) : (
-            <>
-              The source code for this blog is{' '}
-              <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-blue-600 duration-200 transition-colors"
-              >
-                available on GitHub
-              </a>
-              .
-            </>
-          )}
-        </div>
-      </Container>
+    <div className="header_top">
+    <div className="container-fluid">
+      <div className="contact_link-container">
+        <a href="" className="contact_link1">
+          <i className="fa fa-map-marker" aria-hidden="true"></i>
+          <span className="pl-2">
+            Nairobi, Kenya </span>
+        </a>
+        <a href="" className="contact_link2">
+          <i className="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : (+254) 719 230590
+          </span>
+        </a>
+        <a href="mailto:sledgeentertainment8@gmail.com" className="contact_link3">
+          <i className="fa fa-envelope" aria-hidden="true"></i>
+          <span>sledgeentertainment8@gmail.com
+          </span>
+        </a>
+      </div>
     </div>
+  </div>
   )
 }
 
