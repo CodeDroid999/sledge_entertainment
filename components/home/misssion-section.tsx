@@ -1,57 +1,35 @@
 import React from 'react';
-import Navbar from '../layout/navbar';
 
-const MissionSection = () => {
+const MissionSection: React.FC = () => {
   return (
-    <div className="hero_area" style={{ position: 'relative', top: 0, zIndex: -1 }}>
-        <Navbar />
-      {/* Header Section */}
-      <div className="hero_bg_box">
-        <div className="img-box">
-          <img src="../../public/images/about-img.jpg" alt="image box" />
-        </div>
-      </div>   
-      {/* Slider Section */}
-      <section className="slider_section">
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-          <div className="carousel-inner">
-            {/* Carousel Items */}
-            <div className="carousel-item active">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-7">
-                    <div className="detail-box">
-                      <h1>
-                        Crafting Cinematic<br />
-                        <span>experiences</span>
-                      </h1>
-                      <p>
-                        Transforming ideas into captivating stories through the magic of film. Experience creativity in
-                        motion.
-                      </p>
-                      <div className="btn-box">
-                        <a href="#about" className="btn-1">Learn more</a>
-                        <a href="#contact" className="btn-2">Get A Quote</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <section id="mission" className="about_section layout_padding" style={{ backgroundColor: '#9d9999' }}>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 px-0">
+            <div className="img_container">
+              <div className="img-box">
+                <img src="images/mission.jpg" alt="Mission" />
               </div>
             </div>
-
-            {/* Additional Carousel Items */}
-            {/* Add your additional carousel items here */}
           </div>
-          <div className="container indicator_container">
-            <ol className="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+          <div className="col-md-6 px-0">
+            <div className="detail-box">
+              <div className="heading_container">
+                <h2>Our mission</h2>
+              </div>
+              <p>
+                Our mission at Sledge Entertainment Limited is simple yet profound: to bring a positive change to society
+                through our craft. We believe in the transformative power of storytelling and visual artistry to inspire,
+                educate, and uplift. With each project we undertake, our goal is to create content that not only
+                entertains but also resonates with audiences, fostering understanding, empathy, and positive change.
+                Through our dedication to excellence and the magic of film and video production, we strive to be a
+                catalyst for a brighter and more enlightened society.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

@@ -12,7 +12,7 @@ export default function Index() {
         <HeroArea />
         <AboutSection />
         <ServiceSection />
-        <MissionSection />
+        <MissionSection/>
       </Layout>
   )
 }
