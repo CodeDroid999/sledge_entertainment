@@ -5,6 +5,7 @@ import Navbar from '../components/layout/navbar'
 import AboutSection from '../components/home/about-section'
 import ServiceSection from '../components/home/service-section'
 import MissionSection from '../components/home/misssion-section'
+import ReviewsSection from '../components/home/reviews-section'
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
         <AboutSection />
         <ServiceSection />
         <MissionSection/>
+        <ReviewsSection/>
       </Layout>
   )
 }
