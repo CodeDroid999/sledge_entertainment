@@ -14,29 +14,27 @@ type Props = {
 
 const Alert = ({ preview }: Props) => {
   return (
-    <div className="header_top">
     <div className="container-fluid">
       <div className="contact_link-container">
         <a href="" className="contact_link1">
-        <FontAwesomeIcon icon={faLocationDot} size="2x" style={{ color: '#e8b602' }} />
-        <span className="pl-2">
+          <FontAwesomeIcon icon={faLocationDot} size="2x" style={{ color: '#e8b602' }} />
+          <span className="pl-2">
             Nairobi, Kenya </span>
         </a>
         <a href="" className="contact_link2">
-        <FontAwesomeIcon icon={faPhone} size="2x" style={{ color: '#e8b602' }} />
-        <span className="pl-2">
-                      Call : (+254) 719 230590
+          <FontAwesomeIcon icon={faPhone} size="2x" style={{ color: '#e8b602' }} />
+          <span className="pl-2">
+            Call : (+254) 719 230590
           </span>
         </a>
         <a href="mailto:sledgeentertainment8@gmail.com" className="contact_link3">
-        <FontAwesomeIcon icon={faEnvelope} size="2x" style={{ color: '#e8b602' }} />
-        <span className="pl-2">
-                      sledgeentertainment8@gmail.com
+          <FontAwesomeIcon icon={faEnvelope} size="2x" style={{ color: '#e8b602' }} />
+          <span className="pl-2">
+            sledgeentertainment8@gmail.com
           </span>
         </a>
       </div>
     </div>
-  </div>
   )
 }
 
