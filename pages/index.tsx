@@ -6,6 +6,8 @@ import AboutSection from '../components/home/about-section'
 import ServiceSection from '../components/home/service-section'
 import MissionSection from '../components/home/misssion-section'
 import ReviewsSection from '../components/home/reviews-section'
+import VisionSection from '../components/home/vission-section'
+import ProjectsSection from '../components/home/projects-section'
 
 export default function Index() {
   return (
@@ -15,6 +17,8 @@ export default function Index() {
         <ServiceSection />
         <MissionSection/>
         <ReviewsSection/>
+        <VisionSection/>
+        <ProjectsSection/>
       </Layout>
   )
 }
