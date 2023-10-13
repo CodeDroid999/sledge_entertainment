@@ -1,6 +1,7 @@
 import React from 'react';
 import Alert from '../alert';
 import Navbar from './navbar';
+import CustomNavbar from './navbar';
 
 const Home: React.FC = () => {
     return (
@@ -9,10 +10,10 @@ const Home: React.FC = () => {
                 <Alert />
             </div>
             <div className="header_bottom">
-                <Navbar />
+                <CustomNavbar />
             </div>
-        </header>  
-  );
+        </header>
+    );
 };
 
 export default Home;
